@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.emit.bean.Seat" table="seats">  
+    <id name="idseats">  
+     	<generator class="native"></generator>  
+    </id>  
+            
+    <property name="seat" column="seat"></property>          
+            
+  </class>  
+            
+ </hibernate-mapping> 

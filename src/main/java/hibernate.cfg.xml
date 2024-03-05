@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+          "-//Hibernate/Hibernate Configuration DTD 5.3//EN"  
+          "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">  
+  
+<hibernate-configuration>  
+  
+    <session-factory>  
+        <!-- inizio parametri JDBC -->   
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property> 
+        <property name="connection.url">jdbc:mysql://localhost:3307/cinema</property>  
+        <property name="connection.username">root</property>  
+        <property name="connection.password">unpocoloco</property>  
+        <!-- fine parametri JDBC --> 
+
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>  
+        <property name="show_sql">true</property>
+         
+        <mapping resource="user.hbm.xml"/>  
+        <mapping resource="dates.hbm.xml"/>  
+        <mapping resource="filmhours.hbm.xml"/>  
+        <mapping resource="films.hbm.xml"/>  
+        <mapping resource="hours.hbm.xml"/>  
+        <mapping resource="roles.hbm.xml"/>  
+        <mapping resource="seats.hbm.xml"/>  
+        <mapping resource="tickets.hbm.xml"/>  
+    </session-factory>  
+  
+</hibernate-configuration>

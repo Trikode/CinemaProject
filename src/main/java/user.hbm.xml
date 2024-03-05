@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.emit.bean.User2" table="users">  
+    <id name="idusers">  
+     	<generator class="native"></generator>  
+    </id>  
+            
+    <property name="first_name" column="first_name"></property>  
+    <property name="last_name" column="last_name"></property> 
+    <property name="email" column="email"></property> 
+    <property name="password" column="password"></property> 
+    <property name="IDRole" column="IDRole"></property> 
+    <property name="num_attempts" column="num_attempts"></property> 
+    <property name="active" column="active"></property> 
+     
+            
+  </class>  
+            
+ </hibernate-mapping> 

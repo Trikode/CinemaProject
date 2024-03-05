@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC  
+ "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+ "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">  
+  
+ <hibernate-mapping>  
+  <class name="com.emit.bean.Film" table="films">  
+    <id name="idfilms">  
+     	<generator class="native"></generator>  
+    </id>  
+            
+    <property name="title" column="title"></property>  
+    <property name="summary" column="summary"></property> 
+    <property name="lenght" column="lenght"></property> 
+    <property name="image" column="image"></property>     
+    <property name="trailer" column="trailer"></property>     
+            
+  </class>  
+            
+ </hibernate-mapping> 
